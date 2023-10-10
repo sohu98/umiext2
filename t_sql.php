@@ -1,13 +1,12 @@
 <?php
 
 echo "test 1 \n";
-echo "test 99 \n";
 
 $serverName = "xxmtestdb.database.windows.net"; // update me
     $connectionOptions = array(
         "Database" => "ext2db", // update me
         "Uid" => "xxmtestdb_admin", // update me
-        "PWD" => "#EDC4rfv" // update me
+        "PWD" => "$RFV6yhn" // update me
     );
     //Establishes the connection
 echo "step 1 \n";
