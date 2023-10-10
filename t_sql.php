@@ -1,6 +1,6 @@
 <?php
 
-echo "test 7 \n";
+echo "test 8 \n";
 
 $serverName = "xxmtestdb.database.windows.net"; // update me
     $connectionOptions = array(
