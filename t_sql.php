@@ -1,6 +1,6 @@
 <?php
 
-echo "test \n"
+echo "test 6 \n";
 
 
 try {
