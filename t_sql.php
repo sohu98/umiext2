@@ -1,6 +1,6 @@
 <?php
 
-print("test 3");
+print("test 4");
 
 // PHP Data Objects(PDO) Sample Code:
 try {
