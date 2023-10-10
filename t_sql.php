@@ -1,6 +1,6 @@
 <?php
 
-print("test 5");
+echo "test \n"
 
 
 try {
