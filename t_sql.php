@@ -1,6 +1,6 @@
 <?php
 
-echo "test 9 \n";
+echo "test 1 \n";
 echo "test 99 \n";
 
 $serverName = "xxmtestdb.database.windows.net"; // update me
@@ -12,6 +12,9 @@ $serverName = "xxmtestdb.database.windows.net"; // update me
     //Establishes the connection
 echo "step 1 \n";
     $conn = sqlsrv_connect($serverName, $connectionOptions);
+if( $conn === false ) {
+    die( print_r( sqlsrv_errors(), true));
+}
 echo "step 2 \n";
     $tsql = "SELECT @@Version AS SQL_VERSION";
     $stmt = sqlsrv_query($conn, $tsql);
