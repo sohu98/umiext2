@@ -1,7 +1,7 @@
 <?php
 
-echo "test 8 \n";
 echo "test 9 \n";
+echo "test 99 \n";
 
 $serverName = "xxmtestdb.database.windows.net"; // update me
     $connectionOptions = array(
