@@ -1,7 +1,9 @@
 <?php
 
-$azureServer = 'myazureserver.database.windows.net';
-$azureDatabase = 'myazuredatabase';
+echo "test 1";
+
+$azureServer = 'xxmtestdb.database.windows.net';
+$azureDatabase = 'ext2db';
 $connectionInfo = array('Database'=>$azureDatabase,
                         'Authentication'=>'ActiveDirectoryMsi');
 $conn = sqlsrv_connect($azureServer, $connectionInfo);
