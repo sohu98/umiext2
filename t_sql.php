@@ -24,4 +24,6 @@ $serverName = "xxmtestdb.database.windows.net"; // update me
         sqlsrv_free_stmt($stmt);
     }
 
+echo "end";
+
 ?>
