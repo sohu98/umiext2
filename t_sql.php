@@ -1,6 +1,7 @@
 <?php
 
 echo "test 8 \n";
+echo "test 9 \n";
 
 $serverName = "xxmtestdb.database.windows.net"; // update me
     $connectionOptions = array(
@@ -9,9 +10,12 @@ $serverName = "xxmtestdb.database.windows.net"; // update me
         "PWD" => "$RFV6yhn" // update me
     );
     //Establishes the connection
+echo "step 1 \n";
     $conn = sqlsrv_connect($serverName, $connectionOptions);
+echo "step 2 \n";
     $tsql = "SELECT @@Version AS SQL_VERSION";
     $stmt = sqlsrv_query($conn, $tsql);
+echo "step 3 \n";
     if ($stmt === false) {
         echo "Failed to run the simple query (system-assigned).\n";
         print_r(sqlsrv_errors());
