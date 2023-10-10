@@ -1,9 +1,7 @@
 <?php
 
-echo "test 6 \n";
+echo "test 7 \n";
 
-
-try {
 $serverName = "xxmtestdb.database.windows.net"; // update me
     $connectionOptions = array(
         "Database" => "ext2db", // update me
@@ -25,11 +23,5 @@ $serverName = "xxmtestdb.database.windows.net"; // update me
 
         sqlsrv_free_stmt($stmt);
     }
-   
-}
-catch (PDOException $e) {
-    print("Error connecting to SQL Server.");
-    die(print_r($e));
-}
 
 ?>
