@@ -11,10 +11,10 @@ $connectionInfo = array('Database'=>$azureDatabase,
 $conn = sqlsrv_connect($azureServer, $connectionInfo);
 
 if ($conn === false) {
-    echo "Could not connect with Authentication=ActiveDirectoryMsi (system-assigned).\n";
+    echo "Could not connect with Authentication=ActiveDirectoryMsi (user-assigned).\n";
     print_r(sqlsrv_errors());
 } else {
-    echo "Connected successfully with Authentication=ActiveDirectoryMsi (system-assigned).\n";
+    echo "Connected successfully with Authentication=ActiveDirectoryMsi (user-assigned).\n";
     
     $tsql = "SELECT @@Version AS SQL_VERSION";
     $stmt = sqlsrv_query($conn, $tsql);
